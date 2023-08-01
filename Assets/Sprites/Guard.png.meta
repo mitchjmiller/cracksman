@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 509b089d125d5f945b9f69f9c8d0b228
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Forearm R
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 482
+        width: 62
+        height: 129
+      alignment: 9
+      pivot: {x: 0.63009876, y: 0.88767546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f60fb516c7ebf49b8e4dfdc56eed37
+      internalID: -949472983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arm R
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 476
+        width: 62
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5130101, y: 0.88208085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6c35ccb37320d4f86d0dbd68b0d896
+      internalID: -450937716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 604
+        width: 158
+        height: 178
+      alignment: 9
+      pivot: {x: 0.4255228, y: 0.11860297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12262bbdb2932b4caa9b3d4ff053285
+      internalID: -1915011140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arm L
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 492
+        width: 92
+        height: 143
+      alignment: 9
+      pivot: {x: 0.24574147, y: 0.8215178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df15a7c32e73fc4cbb7efa100366195
+      internalID: -1564524965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forearm L
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 510
+        width: 87
+        height: 118
+      alignment: 9
+      pivot: {x: 0.27748686, y: 0.841786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1496f607490da641abf97d1747f1298
+      internalID: 993113190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand R
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 345
+        width: 62
+        height: 65
+      alignment: 9
+      pivot: {x: 0.3829107, y: 0.87228394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05294dcaf240d34ca1f2beb0e709008
+      internalID: -1259590534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 305
+        width: 153
+        height: 262
+      alignment: 9
+      pivot: {x: 0.54217607, y: 0.08745697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fd792b27636dc418cafc5b55ed86be
+      internalID: 1979805497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand L
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 353
+        width: 65
+        height: 67
+      alignment: 9
+      pivot: {x: 0.23940241, y: 0.849132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd663e13fa8175a4ca1050e01d7ec86a
+      internalID: 1258185054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leg R
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 153
+        width: 72
+        height: 125
+      alignment: 9
+      pivot: {x: 0.6008271, y: 0.8484575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca0a0a5cbacb794dbf7d610a746c9d7
+      internalID: 491120506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thigh R
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 122
+        width: 93
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5780597, y: 0.8376525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5065c6b65b44cf42a9b6e4ac734de76
+      internalID: -934866260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pelvis
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 150
+        width: 144
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf52bb47401d7854aa29bbe6deab0885
+      internalID: -1307487044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thigh L
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 121
+        width: 82
+        height: 165
+      alignment: 9
+      pivot: {x: 0.5196742, y: 0.8226459}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf235a7d8e1b9f42a5e9307e839f397
+      internalID: -425299012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leg L
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 145
+        width: 75
+        height: 123
+      alignment: 9
+      pivot: {x: 0.60754967, y: 0.85412335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ab12313dd280e40ae40ad75c3a39a1
+      internalID: 1573538884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foot R
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 10
+        width: 89
+        height: 65
+      alignment: 9
+      pivot: {x: 0.3912434, y: 0.7978272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4c251e7f825574cab444b1e40d8287
+      internalID: 1139418595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foot L
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 21
+        width: 89
+        height: 53
+      alignment: 9
+      pivot: {x: 0.29154918, y: 0.8500404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55b8fd21e0be0a45984c33dcbda8e8d
+      internalID: 1139686837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arm L: -1564524965
+      Arm R: -450937716
+      Body: 1979805497
+      Foot L: 1139686837
+      Foot R: 1139418595
+      Forearm L: 993113190
+      Forearm R: -949472983
+      Hand L: 1258185054
+      Hand R: -1259590534
+      Head: -1915011140
+      Leg L: 1573538884
+      Leg R: 491120506
+      Pelvis: -1307487044
+      Thigh L: -425299012
+      Thigh R: -934866260
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
