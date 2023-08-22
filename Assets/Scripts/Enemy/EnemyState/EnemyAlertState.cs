@@ -7,6 +7,7 @@ public class EnemyAlertState : EnemyState {
 
   public override void EnterState() {
     int index = Random.Range(0, enemy.alertDialogueIds.Length);
+    EffectsManager.Instance.ScreenShake(1);
     DialogueManager.Instance.CreateDialogue(enemy.transform, enemy.alertDialogueIds[index]);
     Enemy.OnDetected.Invoke();
   }

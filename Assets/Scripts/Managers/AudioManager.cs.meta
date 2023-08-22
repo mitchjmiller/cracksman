@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: db2652f0edcaad34e97bda00a11e22a1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mixer: {fileID: 24100000, guid: 06683e1976daa2b49a4f39a7e34e9bbe, type: 2}
+  - regularMusic: {instanceID: 0}
+  - suspenseMusic: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

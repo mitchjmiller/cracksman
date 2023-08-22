@@ -11,7 +11,7 @@ public class PlayerJumpState : PlayerState {
 
   #region Lifecycle Events
   public override void EnterState() {
-    player.inputActions.Player.Jump.canceled += OnJumpCanceled;
+    InputManager.Instance.inputActions.Player.Jump.canceled += OnJumpCanceled;
     player.movementForce *= movementForceMultiplier;
     player.rb.AddForce(Vector2.up * player.jumpForce * player.rb.mass, ForceMode2D.Impulse);
     player.Footstep();
@@ -19,7 +19,7 @@ public class PlayerJumpState : PlayerState {
   }
 
   public override void ExitState() {
-    player.inputActions.Player.Jump.canceled -= OnJumpCanceled;
+    InputManager.Instance.inputActions.Player.Jump.canceled -= OnJumpCanceled;
     player.movementForce /= movementForceMultiplier;
   }
 

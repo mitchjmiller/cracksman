@@ -13,6 +13,10 @@ public class EnemyPatrollingState : EnemyState {
     }
   }
 
+  public override void EnterState() {
+    AudioManager.Instance.SetMusicState(AudioManager.MusicState.Regular);
+  }
+
   public override void Update() {
     enemy.UpdateVisibility();
     SightLineCheck();

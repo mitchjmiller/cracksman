@@ -5,8 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.Rendering.Universal;
 
 public class ToggleButton : MonoBehaviour {
-  public UnityEvent OnEnable;
-  public UnityEvent OnDisable;
+
 
   [SerializeField] private bool toggleEnabled = false;
   [SerializeField] private SpriteRenderer button;
@@ -14,6 +13,9 @@ public class ToggleButton : MonoBehaviour {
   [SerializeField] private string enabledText = "Turn Off";
   [SerializeField] private string disabledText = "Turn On";
   private Interactable interactable;
+
+  public UnityEvent OnEnable;
+  public UnityEvent OnDisable;
 
   private void Awake() {
     interactable = GetComponent<Interactable>();

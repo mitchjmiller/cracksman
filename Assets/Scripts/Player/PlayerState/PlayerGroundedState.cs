@@ -9,16 +9,16 @@ public class PlayerGroundedState : PlayerState {
 
   #region Lifecycle Events
   public override void EnterState() {
-    player.inputActions.Player.Jump.performed += OnJumpPerformed;
-    player.inputActions.Player.Hide.performed += OnHidePerformed;
+    InputManager.Instance.inputActions.Player.Jump.performed += OnJumpPerformed;
+    InputManager.Instance.inputActions.Player.Hide.performed += OnHidePerformed;
     player.rb.gravityScale = 1;
 
     player.OnFootstep.Invoke();
   }
 
   public override void ExitState() {
-    player.inputActions.Player.Jump.performed -= OnJumpPerformed;
-    player.inputActions.Player.Hide.performed -= OnHidePerformed;
+    InputManager.Instance.inputActions.Player.Jump.performed -= OnJumpPerformed;
+    InputManager.Instance.inputActions.Player.Hide.performed -= OnHidePerformed;
   }
 
   public override void Update() {
@@ -26,7 +26,7 @@ public class PlayerGroundedState : PlayerState {
       player.ChangeState(player.playerFallingState);
       return;
     }
-    if (player.inputActions.Player.Hide.IsPressed()) {
+    if (InputManager.Instance.inputActions.Player.Hide.IsPressed()) {
       player.ChangeState(player.playerHiddenState);
       return;
     }

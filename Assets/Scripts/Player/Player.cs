@@ -24,7 +24,7 @@ public class Player : MonoBehaviour {
   [SerializeField] public bool climbing;
   [SerializeField] public bool hidden = false;
 
-  public InputActions inputActions { get; private set; }
+
   public Rigidbody2D rb { get; private set; }
   public Collider2D coll { get; private set; }
   public PlayerInventory inventory { get; private set; }
@@ -62,7 +62,6 @@ public class Player : MonoBehaviour {
     }
 
     Instance = this;
-    inputActions = new InputActions();
     rb = GetComponent<Rigidbody2D>();
     coll = GetComponent<Collider2D>();
     inventory = GetComponent<PlayerInventory>();
@@ -75,14 +74,13 @@ public class Player : MonoBehaviour {
   }
 
   private void Start() {
-    inputActions.Player.Enable();
-    inputActions.Player.Interact.performed += OnInteractPerformed;
+    InputManager.Instance.inputActions.Player.Interact.performed += OnInteractPerformed;
     ChangeState(playerGroundedState);
   }
 
   private void OnDestroy() {
-    inputActions.Player.Disable();
-    inputActions.Player.Interact.performed -= OnInteractPerformed;
+    ChangeState(null);
+    InputManager.Instance.inputActions.Player.Interact.performed -= OnInteractPerformed;
   }
 
   private void Update() {
@@ -91,7 +89,7 @@ public class Player : MonoBehaviour {
   }
 
   private void FixedUpdate() {
-    movementVector = inputActions.Player.Move.ReadValue<Vector2>();
+    movementVector = InputManager.Instance.inputActions.Player.Move.ReadValue<Vector2>();
     currentState.FixedUpdate();
   }
   #endregion
@@ -100,6 +98,8 @@ public class Player : MonoBehaviour {
 
   public void ChangeState(PlayerState newState) {
     this.currentState?.ExitState();
+    if (newState == null) return;
+
     this.currentState = newState;
     this.currentState.EnterState();
   }

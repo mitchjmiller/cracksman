@@ -8,12 +8,12 @@ public class PlayerHiddenState : PlayerState {
 
   #region Lifecycle Events
   public override void EnterState() {
-    player.inputActions.Player.Hide.canceled += OnHideCanceled;
+    InputManager.Instance.inputActions.Player.Hide.canceled += OnHideCanceled;
     player.hidden = true;
   }
 
   public override void ExitState() {
-    player.inputActions.Player.Hide.canceled -= OnHideCanceled;
+    InputManager.Instance.inputActions.Player.Hide.canceled -= OnHideCanceled;
     player.hidden = false;
   }
   #endregion

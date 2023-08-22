@@ -22,6 +22,8 @@ public class EnemyCuriousState : EnemyState {
     sightLineDistance = enemy.nearSightDistance;
     timer = cooldownTime;
     int index = Random.Range(0, enemy.curiousDialogueIds.Length);
+    AudioManager.Instance.SetMusicState(AudioManager.MusicState.Suspense);
+    EffectsManager.Instance.ScreenShake(0.2f);
     DialogueManager.Instance.CreateDialogue(enemy.transform, enemy.curiousDialogueIds[index]);
   }
 

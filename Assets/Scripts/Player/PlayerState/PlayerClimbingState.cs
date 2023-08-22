@@ -12,8 +12,8 @@ public class PlayerClimbingState : PlayerState {
 
   #region Lifecycle Events
   public override void EnterState() {
-    player.inputActions.Player.Interact.performed += OnInteractPerformed;
-    player.inputActions.Player.Jump.performed += OnJumpPerformed;
+    InputManager.Instance.inputActions.Player.Interact.performed += OnInteractPerformed;
+    InputManager.Instance.inputActions.Player.Jump.performed += OnJumpPerformed;
     player.climbing = true;
     player.rb.gravityScale = 0f;
     leftGround = false;
@@ -24,8 +24,8 @@ public class PlayerClimbingState : PlayerState {
   }
 
   public override void ExitState() {
-    player.inputActions.Player.Interact.performed -= OnInteractPerformed;
-    player.inputActions.Player.Jump.performed -= OnJumpPerformed;
+    InputManager.Instance.inputActions.Player.Interact.performed -= OnInteractPerformed;
+    InputManager.Instance.inputActions.Player.Jump.performed -= OnJumpPerformed;
     player.climbing = false;
     player.rb.gravityScale = 1f;
   }
@@ -43,6 +43,7 @@ public class PlayerClimbingState : PlayerState {
   }
 
   public override void FixedUpdate() {
+    player.HandleRotation();
     HandleClimbing();
   }
   #endregion

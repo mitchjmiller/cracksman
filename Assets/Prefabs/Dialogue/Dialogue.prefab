@@ -138,7 +138,7 @@ MonoBehaviour:
   target: {fileID: 0}
   offset: {x: 0.5, y: 2.5}
   text: 
-  timeout: 3
+  timeout: 4
 --- !u!1 &3715192265316815521
 GameObject:
   m_ObjectHideFlags: 0

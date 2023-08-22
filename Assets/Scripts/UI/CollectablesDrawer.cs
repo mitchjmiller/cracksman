@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class CollectablesDrawer : MonoBehaviour {
   [SerializeField] private Image key;
+  [SerializeField] private Image bigGem;
   [SerializeField] private Image redGem;
   [SerializeField] private Image greenGem;
   [SerializeField] private Image blueGem;
@@ -22,6 +23,7 @@ public class CollectablesDrawer : MonoBehaviour {
   private void Awake() {
     animator = GetComponent<Animator>();
     key.color = new Color(1, 1, 1, 0);
+    bigGem.color = new Color(1, 1, 1, 0);
     gemsArray = new Image[] { redGem, greenGem, blueGem, yellowGem };
     foreach (Image gem in gemsArray) gem.color = new Color(1, 1, 1, uncollectedAlpha);
   }
@@ -42,6 +44,7 @@ public class CollectablesDrawer : MonoBehaviour {
     Image item = null;
     switch (itemId) {
       case "exit_key": item = key; break;
+      case "big_gem": item = bigGem; break;
       case "red_gem": item = redGem; break;
       case "green_gem": item = greenGem; break;
       case "blue_gem": item = blueGem; break;
@@ -57,6 +60,6 @@ public class CollectablesDrawer : MonoBehaviour {
     CloseCollectablesDrawer();
   }
 
-  private void OpenCollectablesDrawer() => animator.SetBool(OPEN, true);
-  private void CloseCollectablesDrawer() => animator.SetBool(OPEN, false);
+  public void OpenCollectablesDrawer() => animator.SetBool(OPEN, true);
+  public void CloseCollectablesDrawer() => animator.SetBool(OPEN, false);
 }

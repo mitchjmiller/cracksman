@@ -6,7 +6,8 @@ using UnityEngine;
 public class UI : MonoBehaviour {
   [SerializeField] private GameObject pausedScreen;
   [SerializeField] private GameObject gameOverScreen;
-  [SerializeField] private GameObject levelCompleteScreen;
+  [SerializeField] private GameObject toBeContinuedScreen;
+  [SerializeField] private CollectablesDrawer collectablesDrawer;
 
   private GameObject activeScreen;
 
@@ -15,13 +16,19 @@ public class UI : MonoBehaviour {
   }
 
   private void OnGameStateChange() {
+    collectablesDrawer.CloseCollectablesDrawer();
+    pausedScreen.SetActive(false);
+
     switch (GameManager.Instance.GetState()) {
       case GameManager.State.GameOver:
         gameOverScreen.SetActive(true); break;
-      case GameManager.State.LevelComplete:
-        levelCompleteScreen.SetActive(true); break;
       case GameManager.State.Paused:
-        pausedScreen.SetActive(true); break;
+        pausedScreen.SetActive(true);
+        collectablesDrawer.OpenCollectablesDrawer();
+        break;
+      case GameManager.State.End:
+        toBeContinuedScreen.SetActive(true);
+        break;
     }
   }
 }

@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 4194754695528689444}
   - component: {fileID: 8229741221978254391}
   - component: {fileID: 5492769908584542115}
+  - component: {fileID: 5947827839573017120}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -201,13 +202,25 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a9ef4d2a2f9a56541a227c43da424ba2, type: 3}
   - {fileID: 8300000, guid: 54a4877be4baa274eb013431be90a7b0, type: 3}
   - {fileID: 8300000, guid: 8e318b4300a0d9247a1bd3e96bb7a13d, type: 3}
-  keyId: 1
+  keyId: exit_key
   OnOpen:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LevelComplete
+        m_MethodName: LoadScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: Trigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -219,7 +232,19 @@ MonoBehaviour:
         m_CallState: 2
   OnOpenFailed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: Trigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnClose:
     m_PersistentCalls:
       m_Calls: []
@@ -319,6 +344,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5947827839573017120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490045213437499111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc868d3c87802644eb259022f143bd27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8229741221978254391}
+        m_TargetAssemblyTypeName: Door, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: Player, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialoguePrefab: {fileID: 3889221028643558467, guid: eed0bb53d64cb6247a3116b652f17181, type: 3}
+  interactTerm: Open
+  dialogueOffset: {x: 1, y: 2.5, z: 0}
 --- !u!1 &6657198794093574466
 GameObject:
   m_ObjectHideFlags: 0
