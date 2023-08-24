@@ -809,12 +809,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 5769149253839358856}
+  footstepVolume: 0.6
   footsteps:
   - {fileID: 8300000, guid: a2586438a149bc6439f4d50b20d6c5da, type: 3}
   - {fileID: 8300000, guid: e55a63d4c3640f442a6f9b62d9933522, type: 3}
   - {fileID: 8300000, guid: 5457f4e9d4e370f4d8f81fbdd9aebe98, type: 3}
   - {fileID: 8300000, guid: d3285181a705f5f49a75769dd66fb3f7, type: 3}
   - {fileID: 8300000, guid: 8e7d5d5c9cc2df3498e6d38fbc31a944, type: 3}
+  alertVolume: 1
+  alertSound: {fileID: 8300000, guid: 374cf1032fc06024eaca8a136ae9c1c8, type: 3}
 --- !u!82 &4530946847981458066
 AudioSource:
   m_ObjectHideFlags: 0
@@ -827,7 +830,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 1617956632395910768, guid: 06683e1976daa2b49a4f39a7e34e9bbe, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
